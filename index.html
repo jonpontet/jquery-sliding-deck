@@ -1,5 +1,253 @@
 <html>
+<title>jQuery Sliding Deck</title>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap&family=Playfair+Display:wght@400&display=swap"
+>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/highlightjs.css">
+<link rel="stylesheet" href="css/theme.css">
 <body>
-    hello
+<header>
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container d-flex justify-content-between">
+      <a class="navbar-brand" href="#"><img class="navbar-logo" src="img/method-draw-image.svg"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+              aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#demo">Demo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#use">How to use</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#customise">Customise</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<main role="main">
+  <section class="jumbotron">
+    <div class="container">
+      <h1 class="display-4">jQuery Sliding Deck</h1>
+      <p class="lead">Full screen stacking content &mdash; display your website content like a deck of cards</p>
+      <ul>
+        <li>Uses native browser scrolling &mdash; does not hijack the scrollbar!</li>
+        <li>Not just full screen &mdash; can be used on small sections</li>
+        <li>Only about 6 KB &mdash; for all required JavaScript and CSS</li>
+        <li>Mobile friendly &mdash; stacks your content only when the screen is big enough</li>
+      </ul>
+      <p>Forked from <a href="https://github.com/rgrandi/jquery.stacked-strips" target="_blank">rgrandi/jquery.stacked-strips</a>,
+        created by <a href="https://jonpontet.com" target="_blank">Jon Pontet</a>.</p>
+      <p><a class="btn btn-primary" href="https://github.com/jonpontet/jquery-sliding-deck/releases/latest"
+            role="button" target="_blank">Download from GitHub <img class="github-logo" src="img/github-brands.svg"></a>
+      </p>
+    </div>
+  </section>
+  <section id="demo" class="py-4">
+    <div class="container">
+      <h2 class="display-5">Demo</h2>
+      <p>You can see jQuery Sliding Deck in action on my own website.</p>
+      <p><a class="btn btn-primary" href="https://jonpontet.com"
+            role="button" target="_blank">View demo &raquo;</a></p>
+
+    </div>
+  </section>
+  <section id="use" class="py-4">
+    <div class="container">
+      <h2>How to use</h2>
+      <h3>1. Load jQuery and include jQuery Sliding Deck plugin files</h3>
+      <p>You will need to use jQuery (version 3.1.1 or greater) and the JavaScript and CSS file of
+        jQuery Sliding Deck as follows...</p>
+      <p>In the <code>&lt;head&gt;</code> tag:</p>
+      <pre><code>
+&lt;!-- jQuery Sliding Deck --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;jquery.sliding-deck.min.css&quot; /&gt;
+            </code></pre>
+      <p>Before the <code>&lt;/body&gt;</code> tag:</p>
+      <pre><code>
+&lt;!-- jQuery 3.1.1+ --&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;!-- jQuery Sliding Deck --&gt;
+&lt;script src=&quot;jquery.sliding-deck.min.js&quot;&gt;&lt;/script&gt;
+            </code></pre>
+      <h3 class="mt-3">2. Setup your HTML</h3>
+      <p>You need at least 2 HTML elements the same (i.e. matching to the same jQuery selector) to make jQuery Sliding
+        Deck work.<br>For the most semantic HTML, use <code>&lt;section&gt;</code> tags:</p>
+      <pre><code>
+&lt;section&gt;
+  &lt;h2&gt;Section 1&lt;/h2&gt;
+  &lt;p&gt;Section content&lt;/p&gt;
+&lt;/section&gt;
+&lt;section&gt;
+  &lt;h2&gt;Section 2&lt;/h2&gt;
+  &lt;p&gt;Section content&lt;/p&gt;
+&lt;/section&gt;
+            </code></pre>
+      <h3 class="mt-3">3. Call the plugin</h3>
+      <p>You are now ready to initialise jQuery Sliding Deck with your preferred <a href="#options">options</a>:</p>
+      <pre><code>
+$(document).ready(function() {
+  $(&quot;section&quot;).slidingDeck();
+});
+            </code></pre>
+    </div>
+  </section>
+  <section id="customise" class="py-4">
+    <div class="container">
+      <h2>Customising</h2>
+      <h3 id="options">1. Options</h3>
+      <p>You can use any or all of these options when initialising jQuery Sliding Deck:</p>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+          <tr>
+            <th scope="col">Variable</th>
+            <th scope="col">Default</th>
+            <th scope="col">Type</th>
+            <th scope="col">Description</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>strip_size</td>
+            <td>"full"</td>
+            <td>string/int</td>
+            <td>Fill the whole screen by default or specify a pixel value to restrict the height.</td>
+          </tr>
+          <tr>
+            <td>active_position</td>
+            <td>50</td>
+            <td>int</td>
+            <td>At what height in percent the <code>active</code> class will be added to the current slide.</td>
+          </tr>
+          <tr>
+            <td>after_class</td>
+            <td>false</td>
+            <td>boolean</td>
+            <td>Set to <code>true</code> to add the <code>name</code> class to the previous slide, when the
+              <code>active</code> class is added to the current slide.
+            </td>
+          </tr>
+          <tr>
+            <td>stackActivationWidth</td>
+            <td>781</td>
+            <td>int</td>
+            <td>At what width in pixels elements will commence stacking. Before this width, the elements will scroll as
+              normal. Use this to specify the minimum width your content needs to display in its entirety in the
+              viewport.
+            </td>
+          </tr>
+          <tr>
+            <td>showNav</td>
+            <td>true</td>
+            <td>boolean</td>
+            <td>Set to <code>false</code> if you do not want the dot navigation.
+            </td>
+          </tr>
+          <tr>
+            <td>navSelector</td>
+            <td>"#top-nav"</td>
+            <td>string</td>
+            <td>Specify a custom jQuery selector for the navigation container.
+            </td>
+          </tr>
+          <tr>
+            <td>showNextSlideButton</td>
+            <td>true</td>
+            <td>boolean</td>
+            <td>Set to <code>false</code> if you do not want the next slide button.
+            </td>
+          </tr>
+          <tr>
+            <td>showNextSlideButtonSelector</td>
+            <td>"#next-slide"</td>
+            <td>string</td>
+            <td>Specify a custom jQuery selector for the next slide button container.
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <h3>2. Defaults</h3>
+      <p>All default options:</p>
+      <pre><code>
+$(document).ready(function() {
+  $(&quot;section&quot;).slidingDeck({
+    strip_size: &quot;full&quot;,
+    active_position: 50,
+    after_class: false,
+    stackActivationWidth: 781,
+    showNav: true,
+    navSelector: &quot;#top-nav&quot;,
+    showNextSlideButton: true,
+    showNextSlideButtonSelector: &quot;#next-slide&quot;
+  });
+});
+      </code></pre>
+    </div>
+  </section>
+  <section id="faq" class="py-4">
+    <div class="container">
+      <h2>FAQ</h2>
+      <dl>
+        <dt>
+          Can I use it for free?
+        </dt>
+        <dd>
+          Yes, you certainly can.
+        </dd>
+        <dt>
+          Can I make a donation?
+        </dt>
+        <dd>
+          Yes please! Any small contribution to keep this plugin alive will be appreciated: <a
+          href="https://www.buymeacoffee.com/jonpontet" target="_blank">Buy me a coffee</a>
+        </dd>
+        <dt>
+          Is there a license?
+        </dt>
+        <dd>
+          Yes. In recognition of <a href="https://github.com/rgrandi" target="_blank">rgrandi</a> who developed and
+          released the original plugin (<a
+          href="https://github.com/rgrandi/jquery.stacked-strips" target="_blank">jquery.stacked-strips</a>) for free
+          and without license, I have consequently attributed the <a
+          href="https://opensource.org/licenses/GPL-3.0" target="_blank">GPL 3.0</a> license. I hope that you will use
+          and share back to the community any enhancements you make.
+        </dd>
+        <dt>
+          Can I request new features?
+        </dt>
+        <dd>
+          Yes. But in the spirit of collaboration, I would prefer your help!<br>
+          So, please fork this repository, implement your idea (including documentation, if necessary),
+          and submit a pull request.
+        </dd>
+      </dl>
+    </div>
+  </section>
+</main>
+<footer class="text-muted py-4">
+  <div class="container">
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="https://jonpontet.com" target="_blank">jonpontet.com</a></li>
+      <li class="list-inline-item"><a href="https://github.com/jonpontet" target="_blank">Jon Pontet on GitHub</a></li>
+    </ul>
+    <p><a href="https://www.montpellier.fr/" target="_blank">Made with <img src="img/flamingo-heart.svg" class="flamingo-heart"> in Montpellier</a></p>
+    <p>Code licensed <a
+      href="https://opensource.org/licenses/GPL-3.0" target="_blank" rel="license noopener">GPL 3.0</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</p>
+  </div>
+</footer>
+<script src="js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

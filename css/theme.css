@@ -1,0 +1,35 @@
+.navbar-logo {
+    height: 50px;
+}
+
+.flamingo-heart {
+    height: 18px;
+}
+
+.github-logo {
+    position: relative;
+    top: -1px;
+    height: 23px;
+}
+
+h3, .h3 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+}
+
+.hljs, .hljs-subst {
+    padding: 0 1.5em;
+}
+
+table th:nth-child(2) {
+    min-width: 120px;
+}
+
+footer {
+    background-color: #e9ecef;
+}
+
+footer a {
+    color: #495057;
+    font-weight: 400;
+}
