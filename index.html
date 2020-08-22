@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery Sliding Deck</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <ol class="menu">
+            <li class="menu__item"><a href="#s1" class="menu__link" title="Section 1"><span class="menu__text sr-only">Section 1</span></a></li>
+            <li class="menu__item"><a href="#s2" class="menu__link" title="Section 2"><span class="menu__text sr-only">Section 2</span></a></li>
+            <li class="menu__item"><a href="#s3" class="menu__link" title="Section 3"><span class="menu__text sr-only">Section 3</span></a></li>
+            <li class="menu__item"><a href="#s4" class="menu__link" title="Section 4"><span class="menu__text sr-only">Section 4</span></a></li>
+        </ol>
+    </header>
+    <section id="s1" class="section1">
+        <div class="content">
+            <h1>section 1</h1>
+            <p>text</p>
+        </div>
+        <div class="background"></div>
+    </section>
+    <section id="s2" class="section2">
+        <div class="content">
+            <h2>section 2</h2>
+            <p>text</p>
+        </div>
+        <div class="background"></div>
+    </section>
+    <section id="s3" class="section3">
+        <div class="content">
+            <h2>section 3</h2>
+            <p>text</p>
+        </div>
+        <div class="background"></div>
+    </section>
+    <section id="s4" class="section4">
+        <div class="content">
+            <h2>section 4</h2>
+            <p>text</p>
+        </div>
+        <div class="background"></div>
+    </section>
+    <div id="fakeScrollbar"></div>
+    <footer>
+        <button class="next-slide"><span class="next-slide__text sr-only">Next section</span></button>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</body>
+
+</html>
