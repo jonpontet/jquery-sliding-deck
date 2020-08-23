@@ -1,5 +1,11 @@
 .navbar-logo {
     height: 50px;
+    -webkit-transform: translateZ(-200px) rotate(-45deg);
+    transform: translateZ(-200px) rotate(-45deg);
+}
+
+.navbar-logo:hover {
+    transform: scale(1.1);
 }
 
 .flamingo-heart {
@@ -32,4 +38,34 @@ footer {
 footer a {
     color: #495057;
     font-weight: 400;
+}
+
+.rotate-in-2-fwd-cw {
+    -webkit-animation: rotate-in-2-fwd-cw 0.8s cubic-bezier(0.950, 0.050, 0.795, 0.035) both;
+    animation: rotate-in-2-fwd-cw 0.8s cubic-bezier(0.950, 0.050, 0.795, 0.035) both;
+}
+
+@-webkit-keyframes rotate-in-2-fwd-cw {
+    0% {
+        -webkit-transform: translateZ(-200px) rotate(-45deg);
+        transform: translateZ(-200px) rotate(-45deg);
+        opacity: .5;
+    }
+    100% {
+        -webkit-transform: translateZ(0) rotate(0);
+        transform: translateZ(0) rotate(0);
+        opacity: 1;
+    }
+}
+@keyframes rotate-in-2-fwd-cw {
+    0% {
+        -webkit-transform: translateZ(-200px) rotate(-45deg);
+        transform: translateZ(-200px) rotate(-45deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateZ(0) rotate(0);
+        transform: translateZ(0) rotate(0);
+        opacity: 1;
+    }
 }
