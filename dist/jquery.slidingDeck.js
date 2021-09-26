@@ -68,12 +68,6 @@
         }
       });
 
-      // Init nav is required
-      if (this.options.navParent &&
-        $(this.options.navParent).length) {
-        this.initNav();
-      }
-
       this.positionCards();
       this.$el.on('resize scroll', function () {
         self.setScrollDirection();
@@ -83,46 +77,6 @@
 
     getCardTop(i) {
       return this.cardsHeight * i;
-    }
-
-    initNav() {
-      let $el = $(this.options.navParent).empty(),
-        $nav = $('<ul class="' + this.options.navClass + '">'),
-        navItemClass = this.options.navClass + '__item',
-        navLinkClass = this.options.navClass + '__link',
-        navTextClass = this.options.navClass + '__text',
-        i = 0,
-        self = this;
-
-      this.$cards.each(function (i, card) {
-        let sectionName = $(card).find(self.options.navCardNameElement).text(),
-          navItem = '<li class="' + navItemClass + '">' +
-            '<a href="#jsd-s-' + (i + 1) + '" class="' + navLinkClass + '" title="' + sectionName + '">' +
-            '<span class="' + navTextClass + ' sr-only">' + sectionName +
-            '</span></a></li>';
-
-        $(navItem)
-          .data('index', i)
-          .on('click', function (e) {
-            e.preventDefault();
-            self.$el.animate({scrollTop: $(self.$cards[i]).data('offsetTop')}, self.options.navScrollDelay);
-          })
-          .appendTo($nav);
-
-        i++;
-      });
-
-      $el.append($nav);
-
-      if (this.options.nextCardButton) {
-        $('<button class="jsd-next-section"><span class="jsd-next-section__text sr-only">' +
-          this.options.nextCardButtonText + '</span></button>')
-          .appendTo(this.options.nextCardButton)
-          .on('click', function (e) {
-            e.preventDefault();
-            $cards.find('.active').next()[0].scrollIntoView();
-          });
-      }
     }
 
     /**
@@ -217,10 +171,6 @@
     activePosition: 50,
     height: 'full', // auto, PX
     previousCardClass: 'after',
-    navParent: 'nav',
-    navClass: 'jsd-nav',
-    navCardNameElement: 'h2',
-    navScrollDelay: 1000,
     nextCardButton: '#next-card',
     nextCardButtonText: 'Next card',
     mobileBreakpoint: 779,
