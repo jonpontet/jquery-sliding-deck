@@ -10,13 +10,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-.next-card {
-  border: none;
-  background: none;
-  width: 25px;
-  height: 15px;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25.016' height='14.776' viewBox='0 0 25.016 14.776'%3E%3Cg transform='translate(0 -100.698)'%3E%3Cg transform='translate(0 100.698)'%3E%3Cpath d='M24.616,101.933l-.819-.825a1.372,1.372,0,0,0-1.936,0l-9.347,9.348L3.155,101.1a1.372,1.372,0,0,0-1.935,0l-.82.82a1.37,1.37,0,0,0,0,1.935l11.142,11.182a1.4,1.4,0,0,0,.97.439h0a1.4,1.4,0,0,0,.967-.439l11.132-11.152a1.382,1.382,0,0,0,.4-.977A1.368,1.368,0,0,0,24.616,101.933Z' transform='translate(0 -100.698)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-}
 .sr-only {
   position: absolute;
   width: 1px;

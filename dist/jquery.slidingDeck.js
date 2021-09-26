@@ -171,8 +171,6 @@
     activePosition: 50,
     height: 'full', // auto, PX
     previousCardClass: 'after',
-    nextCardButton: '#next-card',
-    nextCardButtonText: 'Next card',
     mobileBreakpoint: 779,
     zIndexBase: 10,
     classes: {
