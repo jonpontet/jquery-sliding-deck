@@ -1,0 +1,63 @@
+/* Resets
+ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* Nav
+ */
+.jsd-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.jsd-nav__link {
+  display: block;
+  overflow: hidden;
+  width: 20px;
+  height: 20px;
+}
+.jsd-nav__link::before {
+  display: block;
+  content: "";
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Ccircle cx='4' cy='4' r='4' fill='%23fff'/%3E%3C/svg%3E%0A");
+  background-size: 8px;
+  background-position: 5px 5px;
+  background-repeat: no-repeat;
+}
+.jsd-nav__item--current .jsd-nav__link::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'%3E%3Cg transform='translate(-360 -995)'%3E%3Ccircle cx='4' cy='4' r='4' transform='translate(365 1000)' fill='%23fff'/%3E%3Cg transform='translate(360 995)' fill='none' stroke='%23fff' stroke-width='1'%3E%3Ccircle cx='9' cy='9' r='9' stroke='none'/%3E%3Ccircle cx='9' cy='9' r='8.5' fill='none'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: 18px;
+  background-position: 0 0;
+}
+.next-card {
+  border: none;
+  background: none;
+  width: 25px;
+  height: 15px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25.016' height='14.776' viewBox='0 0 25.016 14.776'%3E%3Cg transform='translate(0 -100.698)'%3E%3Cg transform='translate(0 100.698)'%3E%3Cpath d='M24.616,101.933l-.819-.825a1.372,1.372,0,0,0-1.936,0l-9.347,9.348L3.155,101.1a1.372,1.372,0,0,0-1.935,0l-.82.82a1.37,1.37,0,0,0,0,1.935l11.142,11.182a1.4,1.4,0,0,0,.97.439h0a1.4,1.4,0,0,0,.967-.439l11.132-11.152a1.382,1.382,0,0,0,.4-.977A1.368,1.368,0,0,0,24.616,101.933Z' transform='translate(0 -100.698)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  border: 0;
+}

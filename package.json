@@ -1,0 +1,12 @@
+{
+  "name": "jquery-sliding-deck",
+  "version": "0.1.0",
+  "main": "jquery.slidingDeck.js",
+  "style": "jquery.slidingDeck.css",
+  "description": "jQuery",
+  "homepage": "https://github.com/jonpontet/jquery-sliding-deck",
+  "repository": "jonpontet/jquery-sliding-deck",
+  "bugs": "https://github.com/jonpontet/jquery-sliding-deck/issues",
+  "license": "MIT",
+  "author": "Jon Pontet <jonpontet@gmail.com> (https://jonpontet.com)"
+}

@@ -1,1 +1,3 @@
-[Functionality demo](https://vimeo.com/443841215)
+jQuery Sliding Deck
+
+Display your content like a deck of cards

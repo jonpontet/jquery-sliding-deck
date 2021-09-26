@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>jQuery Sliding Deck</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+<header>
+  <nav></nav>
+</header>
+<main class="jsd">
+  <section class="card1">
+    <div class="inner">
+      <h1>Card 1</h1>
+      <p>Consequat pulvinar. Odio diam pretium mauris dictum arcu nullam libero odio Ante etiam aliquet suscipit varius
+        aenean aliquam aliquet luctus elementum pulvinar tempus cubilia, nonummy hac gravida, feugiat, nunc.</p>
+    </div>
+  </section>
+  <section class="card2">
+    <div class="inner">
+      <h2>Card 2</h2>
+      <p>Consequat pulvinar. Odio diam pretium mauris dictum arcu nullam libero odio Ante etiam aliquet suscipit varius
+        aenean aliquam aliquet luctus elementum pulvinar tempus cubilia, nonummy hac gravida, feugiat, nunc.</p>
+    </div>
+  </section>
+  <section class="card3">
+    <div class="inner">
+      <h2>Card 3</h2>
+      <p>Consequat pulvinar. Odio diam pretium mauris dictum arcu nullam libero odio Ante etiam aliquet suscipit varius
+        aenean aliquam aliquet luctus elementum pulvinar tempus cubilia, nonummy hac gravida, feugiat, nunc.</p>
+    </div>
+  </section>
+  <section class="card4">
+    <div class="inner">
+      <h2>Card 4</h2>
+      <p>Consequat pulvinar. Odio diam pretium mauris dictum arcu nullam libero odio Ante etiam aliquet suscipit varius
+        aenean aliquam aliquet luctus elementum pulvinar tempus cubilia, nonummy hac gravida, feugiat, nunc.</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <button class="next-card"><span class="next-card__text sr-only">Next section</span></button>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../dist/jquery.slidingDeck.js"></script>
+<link rel="stylesheet" href="../dist/jquery.slidingDeck.css">
+<link rel="stylesheet" href="../dist/jquery.slidingDeck.theme.default.css">
+<link rel="stylesheet" href="style.css">
+<script>
+  jQuery(document).ready(function () {
+    $('main').slidingDeck();
+  })
+</script>
+</body>
+
+</html>

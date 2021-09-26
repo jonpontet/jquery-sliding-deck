@@ -1,0 +1,50 @@
+body {
+  color: #fff;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 999;
+  top: 28px;
+  left: 28px;
+  right: 28px;
+  height: 54px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index: 999;
+  bottom: 28px;
+  left: 28px;
+  right: 28px;
+  height: 54px;
+}
+
+h1, h2 {
+  font-size: 40px;
+}
+
+.card1 {
+  background: blue;
+}
+
+.card2 {
+  background: red;
+}
+
+.card3 {
+  background: green;
+}
+
+.card4 {
+  background: orange;
+}
+
+.inner {
+  padding: 10%;
+}

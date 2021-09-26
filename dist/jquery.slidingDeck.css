@@ -1,0 +1,24 @@
+.jsd {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border: 1px solid yellow;
+}
+
+.jsd-card {
+  position: absolute;
+  width: 100%;
+}
+
+.jsd-card.jsd-card--fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.jsd-card.jsd-card--ghost {
+  display: none;
+  height: 1px;
+}

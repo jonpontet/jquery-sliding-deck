@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="856a586f-363b-4462-89ff-fa6dd14c8745" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/plugin.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/jquery.slidingDeck.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/jquery.slidingDeck.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/jquery.slidingDeck.theme.default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/fonts/Carlito-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/fonts/Carlito-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/fonts/Carlito-BoldItalic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/fonts/Carlito-BoldItalic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/fonts/Carlito-Italic.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/fonts/Carlito-Italic.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/fonts/Carlito.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/fonts/Carlito.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/1893746.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/2110771.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/2110772.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/2334654.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/iStock-628342274.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dist/bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dist/bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dist/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dist/index.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/locales/en/main.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/locales/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/template-parts/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/template-parts/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/template-parts/section1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/template-parts/section2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/template-parts/section3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/template-parts/section4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/template-parts/section5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/template.html.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1xr9JMhRGD2Nfubas4zMlxUnBhN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dist" />
+      <recent name="$PROJECT_DIR$/demo" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="856a586f-363b-4462-89ff-fa6dd14c8745" name="Default Changelist" comment="" />
+      <created>1631102267026</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1631102267026</updated>
+      <workItem from="1631102278241" duration="12000" />
+      <workItem from="1631369508631" duration="3561000" />
+      <workItem from="1631374567864" duration="6174000" />
+      <workItem from="1631542718659" duration="3978000" />
+      <workItem from="1632574649897" duration="5580000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1181" y="598" width="624" height="484" key="#Notifications" timestamp="1632574670635">
+      <screen x="47" y="25" width="2513" height="1415" />
+    </state>
+    <state x="1181" y="598" width="624" height="484" key="#Notifications/2560.401.1440.875/47.25.2513.1415@47.25.2513.1415" timestamp="1632574670635" />
+    <state x="1029" y="539" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1632674109866">
+      <screen x="47" y="25" width="2513" height="1415" />
+    </state>
+    <state x="1029" y="539" key="#com.intellij.fileTypes.FileTypeChooser/2560.401.1440.875/47.25.2513.1415@47.25.2513.1415" timestamp="1632674109866" />
+    <state x="687" y="125" width="1773" height="1215" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1631378851922">
+      <screen x="47" y="25" width="2513" height="1415" />
+    </state>
+    <state x="687" y="125" width="1773" height="1215" key="com.intellij.history.integration.ui.views.FileHistoryDialog/2560.401.1440.875/47.25.2513.1415@47.25.2513.1415" timestamp="1631378851922" />
+    <state x="89" y="96" width="1827" height="1396" key="dock-window-1" timestamp="1631552465762">
+      <screen x="47" y="25" width="2513" height="1415" />
+    </state>
+    <state x="89" y="96" width="1827" height="1396" key="dock-window-1/2560.401.1440.875/47.25.2513.1415@47.25.2513.1415" timestamp="1631552465762" />
+  </component>
+</project>
