@@ -168,7 +168,6 @@
 
   SlidingDeck.defaults = {
     cards: 'section',
-    activePosition: 50,
     height: 'full', // auto, PX
     previousCardClass: 'after',
     mobileBreakpoint: 779,
