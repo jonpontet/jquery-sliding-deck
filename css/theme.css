@@ -18,9 +18,18 @@
     height: 23px;
 }
 
+.npm-logo {
+    height: 23px;
+}
+
 h3, .h3 {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
+}
+
+em.underline {
+    font-style: normal;
+    text-decoration: underline;
 }
 
 .hljs, .hljs-subst {
