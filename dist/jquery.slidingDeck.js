@@ -25,7 +25,7 @@
       let self = this;
 
       this.element = el;
-      this.$el = $(el);
+      this.$el = $(el).addClass('jsd');
       this.options = $.extend({}, SlidingDeck.defaults, options);
       this.$cards = [];
       this.$cards = this.$el.find(this.options.cards);
@@ -168,7 +168,7 @@
 
   SlidingDeck.defaults = {
     cards: 'section',
-    height: 'full', // auto, PX
+    height: 'full',
     zIndexBase: 10,
     classes: {
       cardBase: 'jsd-card',
