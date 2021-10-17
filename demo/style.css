@@ -29,22 +29,22 @@ h1, h2 {
   font-size: 40px;
 }
 
-.card1 {
+section:first-child {
   background: blue;
 }
 
-.card2 {
+section:nth-child(2) {
   background: red;
 }
 
-.card3 {
+section:nth-child(3) {
   background: green;
 }
 
-.card4 {
+section:nth-child(4) {
   background: orange;
 }
 
-.inner {
+section > div {
   padding: 10%;
 }
