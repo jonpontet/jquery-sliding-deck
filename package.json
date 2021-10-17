@@ -5,8 +5,25 @@
   "style": "jquery.slidingDeck.css",
   "description": "jQuery",
   "homepage": "https://github.com/jonpontet/jquery-sliding-deck",
-  "repository": "jonpontet/jquery-sliding-deck",
-  "bugs": "https://github.com/jonpontet/jquery-sliding-deck/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonpontet/jquery-sliding-deck.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonpontet/jquery-sliding-deck/issues"
+  },
   "license": "MIT",
-  "author": "Jon Pontet <jonpontet@gmail.com> (https://jonpontet.com)"
+  "author": "Jon Pontet <jonpontet@gmail.com> (https://jonpontet.com)",
+  "dependencies": {
+    "gulp-uglify": "^3.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jquery",
+    "sliding",
+    "deck"
+  ]
 }
