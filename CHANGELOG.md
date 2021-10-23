@@ -1,3 +1,7 @@
+## 0.1.2
+
+* Chore: implementing Gulp
+
 ## 0.1.1
 
 * Bug: removed yellow border
