@@ -1,8 +1,8 @@
 {
   "name": "jquery-sliding-deck",
-  "version": "0.1.2",
-  "main": "jquery.slidingDeck.js",
-  "style": "jquery.slidingDeck.css",
+  "version": "0.1.3",
+  "main": "dist/jquery.slidingDeck.js",
+  "style": "dist/jquery.slidingDeck.css",
   "description": "jQuery",
   "homepage": "https://github.com/jonpontet/jquery-sliding-deck",
   "repository": {
