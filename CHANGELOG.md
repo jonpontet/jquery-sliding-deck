@@ -1,6 +1,6 @@
 ## 0.1.3
 
-* Chore: implementing Gulp
+* Chore: package json
 
 ## 0.1.2
 
