@@ -1,6 +1,6 @@
 /**
  * jQuery Sliding Deck (https://github.com/jonpontet/jquery-sliding-deck)
- * v0.1.2
+ * v0.1.3
  */
 
 /*global define, window, document, jQuery, exports, require */
