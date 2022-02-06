@@ -17,52 +17,39 @@ p {
   margin-bottom: 1vw;
 }
 
+section {
+  background-size: cover;
+}
+
 section:first-child {
-  background: #0094AC;
+  background-color: #FFE7CF;
 }
 
 section:nth-child(2) {
-  background: #ea6b46;
+  background-image: url(img/card-2.svg);
 }
 
 section:nth-child(3) {
-  background: #e03f71;
+  background-image: url(img/card-3.svg);
 }
 
 section:nth-child(4) {
-  background: #ad399e;
+  background-image: url(img/card-4.svg);
 }
 
 section:nth-child(5) {
-  background: #3b4bb9;
+  background-image: url(img/card-5.svg);
 }
 
 section > div {
   padding: 10%;
 }
 
-html {
-  /*overflow-x: hidden;*/
+.jsd-card {
+  opacity: 1;
+  transition: opacity .3s;
 }
 
-body {
-  /*overflow-x: hidden;*/
-}
-
-@media (max-width: 767px) {
-  body {
-    font-size: 14px;
-  }
-  h1, h2 {
-    font-size: 30px;
-  }
-}
-
-@media (min-width: 1200px) {
-  body {
-    font-size: 17px;
-  }
-  h1, h2 {
-    font-size: 45px;
-  }
+.jsd-card.jsd-card--next {
+  opacity: .7;
 }
