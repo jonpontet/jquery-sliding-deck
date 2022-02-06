@@ -3,7 +3,7 @@
   "version": "0.1.3",
   "main": "dist/jquery.slidingDeck.js",
   "style": "dist/jquery.slidingDeck.css",
-  "description": "jQuery",
+  "description": "Display your website content like a deck of cards",
   "homepage": "https://github.com/jonpontet/jquery-sliding-deck",
   "repository": {
     "type": "git",
