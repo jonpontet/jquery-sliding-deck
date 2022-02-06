@@ -1,3 +1,7 @@
+## 0.2.0-beta.0
+
+* Feature: minimum device width
+
 ## 0.1.3
 
 * Chore: package json

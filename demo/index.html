@@ -43,7 +43,9 @@
 <link rel="stylesheet" href="style.css">
 <script>
   jQuery(document).ready(function () {
-    $('main').slidingDeck();
+    $().slidingDeck({
+      minDeviceWidth: 768
+    });
   })
 </script>
 </body>

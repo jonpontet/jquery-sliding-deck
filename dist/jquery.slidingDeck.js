@@ -1,6 +1,6 @@
 /**
  * jQuery Sliding Deck (https://github.com/jonpontet/jquery-sliding-deck)
- * v0.1.1
+ * v0.2.0-beta.0
  */
 
 /*global define, window, document, jQuery, exports, require */
@@ -24,8 +24,7 @@
     constructor(el, options) {
       let self = this;
 
-      this.element = el;
-      this.$el = $(el).addClass('jsd');
+      this.$el = $('body');
       this.options = $.extend({}, SlidingDeck.defaults, options);
       this.$cards = [];
       this.$cards = this.$el.find(this.options.cards);
@@ -33,6 +32,37 @@
         this.options.classes.cardGhost + '">');
       this.isScrollingDown = true;
       this.lastScrollTop = 0;
+      this.hasInitialized = false;
+      this.hasUninitialized = false;
+
+      this.maybeInitialize();
+      $(window).on('resize.maybeInitialize', function () {
+        self.maybeInitialize();
+      });
+    }
+
+
+    maybeInitialize() {
+      if ($(window).width() >= this.options.minDeviceWidth) {
+        this.unInitBasicView();
+        if (!this.hasInitialized) {
+          this.hasInitialized = true;
+          this.hasUninitialized = false;
+          this.init();
+        } 
+      } else {
+      this.initBasicView();
+       if (this.hasInitialized && !this.hasUninitialized) {
+        this.hasUninitialized = true;
+        this.hasInitialized = false;
+        this.unInit();
+       }
+      }
+    }
+
+    init() {
+      let self = this;
+      $('body').addClass('jsd');
 
       // Define default height for all cards
       this.cardsHeight = $(window).height();
@@ -68,24 +98,69 @@
         }
       });
 
+      $(window).off('resize.setMinHeight');
+
       this.positionCards();
-      this.$el.on('resize scroll', function () {
+      $(window).on('resize.positionCards scroll.positionCards', function () {
         self.setScrollDirection();
         self.positionCards();
       });
+    }
+
+    initBasicView() {
+      var self = this;
+      this.setMinHeight();
+      $(window).on('resize.setMinHeight', function () {
+        self.setMinHeight();
+      });
+    }
+
+    unInitBasicView() {
+      this.unSetMinHeight();
+      $(window).off('resize.setMinHeight');
+    }
+
+    setMinHeight() {
+      this.$cards.css('minHeight', $(window).height() + 'px');
+    }
+
+    unSetMinHeight() {
+      this.$cards.css('minHeight', '');
+    };
+
+    unInit() {
+      let self = this;
+      $('body').removeClass('jsd');
+
+      this.$cards.each(function (i, card) {
+        $(card)
+          .removeClass(self.options.classes.cardBase)
+          .removeClass(self.options.classes.cardActive)
+          .removeClass(self.options.classes.cardFixed)
+          .removeClass(self.options.classes.cardPrevious)
+          .removeClass(self.options.classes.cardNext)
+          .height('auto')
+          .removeData('offsetTop')
+          .css({
+            'top': 'auto',
+            'zIndex': 'auto'
+          });
+
+        if (self.$ghostCard.length) {
+          self.$ghostCard.remove();
+        }
+      });
+
+      $(window).off('resize.positionCards scroll.positionCards');
     }
 
     getCardTop(i) {
       return this.cardsHeight * i;
     }
 
-    /**
-     *
-     * Credit: https://stackoverflow.com/a/31223774/777885
-     */
     setScrollDirection() {
-      this.isScrollingDown = this.$el.scrollTop() > this.lastScrollTop;
-      this.lastScrollTop = this.$el.scrollTop() <= 0 ? 0 : this.$el.scrollTop();
+      this.isScrollingDown = $(window).scrollTop() > this.lastScrollTop;
+      this.lastScrollTop = $(window).scrollTop() <= 0 ? 0 : $(window).scrollTop();
     }
 
     positionCards() {
@@ -93,7 +168,7 @@
       this.$cards.each(function (i, card) {
         let $card = $(card),
           offsetTop = $card.data('offsetTop'),
-          jsdScrollTop = self.$el.scrollTop(),
+          jsdScrollTop = $(window).scrollTop(),
           isLastCard = (self.$cards.length - 1) === i;
 
 
@@ -170,6 +245,7 @@
     cards: 'section',
     height: 'full',
     zIndexBase: 10,
+    minDeviceWidth: 0,
     classes: {
       cardBase: 'jsd-card',
       cardActive: 'jsd-card--active',
